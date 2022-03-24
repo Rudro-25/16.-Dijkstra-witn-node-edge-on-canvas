@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Dijkstra&#39;s Algorithm Visualizer</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<canvas id="canvas"></canvas>
+<div class="controller">
+  <ul>
+    <li><button id="btn_select">Select</button></li>
+    <li><button id="btn_addPoint">Add Vertex</button></li>
+    <li><button id="btn_addEdge">Add Edges</button></li>
+    <li id="wrap_animationSpeed">
+      <label>Animation Speed <span>(1500ms)</span></label>
+      <input type="range" min="0" max="3000" step="500" value="1500"></li>
+  </ul>
+  <p>Shortest path </br>from <select id="from"></select> to <select id="to"></select>
+  </p>
+<button id="btn_run_algorithm" style="cursor:pointer"><i class="fa fa-play icon"></i> Visualize</button>
+</div>
+<div id="notification">Loading...</div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
